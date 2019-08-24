@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  background-color: #273c75;
+  padding: 4px 10%;
+}
+
+.main-header__logo {
+  font-family: "Kreon", serif;
+  color: #fff;
+  text-shadow: 2px 4px #0a1021;
+}
+
+.main-header_list {
+  list-style: none;
+  display: flex;
+}
+
+.main-header_list > li {
+  margin-right: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+.main-header_list-item  > a{
+  text-decoration: none;
+  color: #dcdde1;
+  padding: 1em;
+}
+.main-header_list-item  > a:hover{
+  background-color: #dcdde1;
+  color: #273c75;
+  transition: .4s ease-in-out;
+}
+
+.main {
+  min-height: 80vh;
+  width: 100%;
+  background-color: #dcdde1;
+  position: relative;
+}
+
+.all-books {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.all-books > a {
+  display: block;
+  line-height: 150px;
+  text-align: center;
+  text-decoration: none;
+  width: 24%;
+  height: 150px;
+  padding: 0;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid #192a56;
+  cursor: pointer;
+  font-weight: 600;
+  outline: 0;
+  box-shadow: 2px 4px 10px #000;
+}
+
+.all-books > a:hover {
+  background-color: #192a56;
+  color: #fff;
+  border: 2px solid #0a1021;
+  box-shadow: 2px 4px 10px 5px #000;
+  transition: all 0.5s ease-out;
+}
+/* Style book node */
+.book {
+    padding: 1em;
+    display: flex;
+    margin: 1em 0;
+    border: 1px solid #343434;
+    border-radius: 10px;
+}
+
+.image-container {
+    width: 30%;
+    margin-right: 1em;
+}
+.book_image{ 
+    width: 100%
+}
+
+button.reserveBtn,
+button.unreserveBtn {
+    cursor: pointer;
+    padding: 1em 2em;
+    background: transparent;
+    border: none;
+    background-color: #273c75;
+    color: white;
+    font-weight: bold;
+    font-size: .8em;
+}
+
+button.reserveBtn:hover,
+button.unreserveBtn:hover{
+    background-color: #273CC8;
+    transition: .4s ease-in-out;
+}
+
+
+/* End book node*/
+
+/* style form */
+
+#form-container {
+  margin: 30px auto;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.form-wrap {
+  background: #fff;
+  padding: 15px 25px;
+}
+
+.form-wrap h1,
+.form-wrap p {
+  text-align: center;
+}
+
+.form-wrap .form-group {
+  margin-top: 15px;
+}
+
+.form-wrap .form-group label {
+  display: block;
+}
+
+.form-wrap .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-wrap .btn {
+  background: #49c1a2;
+  color: #fff;
+  width: 100%;
+  display: block;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.form-wrap .btn:hover {
+  background: #37a08e;
+}
+.form-wrap .bottom-text {
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.footer {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #273c75;
+}
+
+.footer p {
+  color: #fff;
+  font-size: 90%;
+}

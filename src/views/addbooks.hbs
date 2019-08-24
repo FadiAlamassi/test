@@ -1,0 +1,34 @@
+ <div id="form-container">
+    <div class="form-wrap">
+      <h1>Add Book</h1>
+      <p>It's free and only takes a minute</p>
+      
+      <form action="/add-books" method="POST">
+        <div class="form-group">
+          <label for="book-name">Book Name</label>
+          <input type="text" id="book-name" name='bookname'>
+        </div>
+
+        <div class="form-group">
+          <label for="author-name" >Author name</label>
+          <input type="text" id="author-name" name='authorname'>
+        </div>
+        
+        <div class="form-group">
+          <label for="release-date">Release date</label>
+          <input type="date" id="release-date" name='releasedate'>
+        </div>
+
+        <div class="form-group">
+          <label for="category">Category</label>
+          <input type="text" id="category" name='category'>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea name="book_description" id="description" cols="30" rows="10"></textarea>
+        </div>
+
+        <button type="submit" class="btn">Add Book</button>
+      </form>
+    </div>
